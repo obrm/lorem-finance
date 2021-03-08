@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>בלוג | LoremFinance</title>
+</head>
+
+<body id="home">
+  <header class="hero blog">
+    <div class="navbar top" id="navbar">
+      <h1 class="logo" dir="ltr">
+        <span class="text-primary"><i class="fas fa-book-open"></i> Lorem</span>Finance
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">בית</a></li>
+          <li><a href="index.html#about">אודות</a></li>
+          <li><a href="index.html#cases">תחומי התמחות</a></li>
+          <li><a href="#">בלוג</a></li>
+          <li><a href="index.html#contact">צור קשר</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <h1>בלוג</h1>
+    </div>
+  </header>
+
+  <main>
+    <article class="flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/blog/blog1.jpg" alt="">
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-light">
+            <h2>כותרת בלוג 1</h2>
+            <p class="meta">
+              <i class="fas fa-user"></i> פורסם על ידי <strong>יוני דו</strong> | 15 במאי 2020
+            </p>
+            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף
+              לפרומי בלוף קינץ
+              תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.</p>
+            <a href="post.html" class="btn btn-dark">
+              <i class="fas fa-chevron-left"></i> קרא עוד
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="flex-columns flex-reverse">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/blog/blog2.jpg" alt="">
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-dark">
+            <h2>כותרת בלוג 2</h2>
+            <p class="meta">
+              <i class="fas fa-user"></i> פורסם על ידי <strong>יונית דו</strong> | 30 בינואר 2020
+            </p>
+            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף
+              לפרומי בלוף קינץ
+              תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.</p>
+            <a href="post.html" class="btn btn-light">
+              <i class="fas fa-chevron-left"></i> קרא עוד
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/blog/blog3.jpg" alt="">
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-light">
+            <h2>כותרת בלוג 3</h2>
+            <p class="meta">
+              <i class="fas fa-user"></i> פורסם על ידי <strong>יוני דו</strong> | 03 באפריל 2020
+            </p>
+            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף
+              לפרומי בלוף קינץ
+              תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.</p>
+            <a href="post.html" class="btn btn-dark">
+              <i class="fas fa-chevron-left"></i> קרא עוד
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>כל הזכויות שמורות &copy; 2021 LormFinance LTD</p>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-70px)'
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0)'
+          scrolled = true;
+        }, 200)
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    }
+  </script>
+</body>
+
+</html>

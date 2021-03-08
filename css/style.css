@@ -51,6 +51,11 @@ img {
   position: fixed;
   top: 0;
   padding: 0 30px;
+  transition: 0.5s ease-in;
+}
+
+.navbar.top {
+  background: transparent;
 }
 
 .navbar a {
@@ -114,6 +119,11 @@ img {
   z-index: 10;
 }
 
+.hero.blog {
+  background: url('../images/home/blog.jpg') no-repeat center center/cover;
+  height: 30vh;
+}
+
 /* Icons */
 .icons {
   padding: 30px;
@@ -171,6 +181,29 @@ img {
   margin-top: 10px;
 }
 
+/* Post */
+.post {
+  padding: 50px 30px;
+}
+
+.post h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.post .meta {
+  margin-bottom: 30px;
+}
+
+.post img {
+  width: 300px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 30px;
+}
+
 /* Footer */
 .footer {
   display: flex;
@@ -197,8 +230,15 @@ img {
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    height: 120px;
+    height: 220px;
     padding: 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .navbar a {
@@ -218,5 +258,9 @@ img {
 
   .team img {
     width: 70%;
+  }
+
+  .blog .content h1 {
+    margin-top: 100px;
   }
 }

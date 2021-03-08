@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
     crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/lightbox.min.css">
   <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/style.css">
   <title>ברוכים הבאים ללורם פיננסים</title>
@@ -15,7 +16,7 @@
 
 <body id="home">
   <header class="hero">
-    <div class="navbar" id="navbar">
+    <div class="navbar top" id="navbar">
       <h1 class="logo" dir="ltr">
         <span class="text-primary"><i class="fas fa-book-open"></i> Lorem</span>Finance
       </h1>
@@ -77,7 +78,7 @@
           <div class="column-2 bg-primary">
             <h4>בדיוק מה שאתה מחפש</h4>
             <h2>אנחנו מספקים פתרונות בוטיק</h2>
-            <p>ורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף
+            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף
               לפרומי בלוף קינץ
               תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.</p>
             <a href="#" class="btn btn-outline">
@@ -96,20 +97,44 @@
       </header>
       <div class="row">
         <div class="column">
-          <img src="images/cases/cases1.jpg" alt="">
-          <img src="images/cases/cases2.jpg" alt="">
+          <a href="images/cases/cases1.jpg" data-lightbox="cases"
+            data-title="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית.">
+            <img src="images/cases/cases1.jpg" alt="">
+          </a>
+          <a href="images/cases/cases2.jpg" data-lightbox="cases"
+            data-title="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית.">
+            <img src="images/cases/cases2.jpg" alt="">
+          </a>
         </div>
         <div class="column">
-          <img src="images/cases/cases3.jpg" alt="">
-          <img src="images/cases/cases4.jpg" alt="">
+          <a href="images/cases/cases3.jpg" data-lightbox="cases"
+            data-title="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית.">
+            <img src="images/cases/cases3.jpg" alt="">
+          </a>
+          <a href="images/cases/cases4.jpg" data-lightbox="cases"
+            data-title="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית.">
+            <img src="images/cases/cases4.jpg" alt="">
+          </a>
         </div>
         <div class="column">
-          <img src="images/cases/cases5.jpg" alt="">
-          <img src="images/cases/cases6.jpg" alt="">
+          <a href="images/cases/cases5.jpg" data-lightbox="cases"
+            data-title="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית.">
+            <img src="images/cases/cases5.jpg" alt="">
+          </a>
+          <a href="images/cases/cases6.jpg" data-lightbox="cases"
+            data-title="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית.">
+            <img src="images/cases/cases6.jpg" alt="">
+          </a>
         </div>
         <div class="column">
-          <img src="images/cases/cases7.jpg" alt="">
-          <img src="images/cases/cases8.jpg" alt="">
+          <a href="images/cases/cases7.jpg" data-lightbox="cases"
+            data-title="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית.">
+            <img src="images/cases/cases7.jpg" alt="">
+          </a>
+          <a href="images/cases/cases8.jpg" data-lightbox="cases"
+            data-title="לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית.">
+            <img src="images/cases/cases8.jpg" alt="">
+          </a>
         </div>
       </div>
     </section>
@@ -129,7 +154,7 @@
             <p>ורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף
               לפרומי בלוף קינץ
               תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.</p>
-            <a href="#" class="btn btn-outline">
+            <a href="blog.html" class="btn btn-outline">
               <i class="fas fa-chevron-left"></i> קרא עוד
             </a>
           </div>
@@ -206,6 +231,46 @@
     <p>כל הזכויות שמורות &copy; 2021 LormFinance LTD</p>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+  <script src="js/lightbox.js"></script>
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-70px)'
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0)'
+          scrolled = true;
+        }, 200)
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    }
+
+    // Smooth Scrolling
+    $('#navbar a, .btn').on('click', function (e) {
+      if (this.hash !== '') {
+        e.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top - 200,
+          },
+          800
+        );
+      }
+    });
+  </script>
 </body>
 
 </html>
