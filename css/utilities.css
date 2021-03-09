@@ -51,6 +51,12 @@
   border: 1px solid #fff;
 }
 
+.btn-block {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+
 /* Flex Items */
 .flex-items {
   display: flex;
