@@ -146,3 +146,22 @@
   max-width: 25%;
   padding: 0 4px;
 }
+
+/* Misc */
+.text-center {
+  text-align: center;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+/* Margin */
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
