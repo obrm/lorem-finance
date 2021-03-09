@@ -187,6 +187,10 @@ img {
   font-family: 'Rubik', 'Open Sans', sans-serif;
 }
 
+.callback-form textarea {
+  height: 80px;
+}
+
 .callback-form input:focus,
 .callback-form textarea:focus {
   outline-color: #28a745;
