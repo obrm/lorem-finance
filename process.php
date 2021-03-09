@@ -11,5 +11,6 @@
     //send email
     mail($admin_email, "טופס חדש מאתר לורם פיננסים", $message . ' - ' . $phone, "מ:" . $email);
     
+    // Location
     header('Location: https://obrm.github.io/flex-website/success.html');
   }
